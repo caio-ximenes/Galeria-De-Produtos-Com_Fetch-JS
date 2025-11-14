@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imgs/logo-com-fundo.png" type="image/x-icon">
+    <title>Mercaio Livre</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="body">
+    <header class="header">
+
+
+        <!-- header mobile -->
+        <img src="./assets/imgs/menu-svgrepo-com.svg" alt="menu de opções" id="menu-hamburguer"
+            class="header__hamburguer">
+        <!--  -->
+
+
+
+        <!-- header desktop -->
+        <a href="index.html" class=header__logo>
+            <img src="./assets/imgs/logo.png" alt="Logo Mercaio Livre" class="header__logo">
+        </a>
+
+        <nav class="header__nav--desktop">
+            <a href="index.html" class="header__nav__a--desktop">Home</a>
+            <a href="products.html" class="header__nav__a--desktop">Nossos Produtos</a>
+        </nav>
+        <!--  -->
+
+
+    </header>
+
+    <!-- Barra Lateral e overlay ativada pelo menu hamburguer -->
+    <div class="overlay">
+        <div class="menu-navbar">
+            <img src="./assets/imgs/logo.png" alt="logo mercaio livre" class="menu__logo">
+            <nav class="nav--mobile">
+                <a href="index.html" class="nav__a--mobile">Home</a>
+                <a href="products.html" class="nav__a--mobile">Nossos Produtos</a>
+            </nav>
+        </div>
+    </div>
+    <!--  -->
+
+    
+    <!-- Main com Galeria -->
+    <main id="main" class="main">
+        <div class="main__options">
+
+
+            <!-- Título com botão -->
+            <h1 class="main__h1">Sorteio premiado do Ximenes</h1>
+            <button onclick="setTimeout(() => { sortearProduto(); }, 1000)"class="main__button--sorteio">
+                Sortear
+            </button>
+            <!--  -->
+            
+        </div>
+        <div id="galeria"></div>
+
+    </main>
+    <!--  -->
+
+
+
+    <!-- Footer com créditos -->
+    <footer class="footer">
+        <p class="footer__copyrights">© 2025 Mercaio Livre. Todos os direitos reservados.</p>
+        <p class="footer__copyrights">Feito por Caio Ximenes o rei do React e JS</p>
+    </footer>
+
+    <script src="./script/IndexScript.js" defer></script>
+</body>
+
+</html>
