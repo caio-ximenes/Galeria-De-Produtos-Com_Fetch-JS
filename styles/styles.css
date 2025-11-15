@@ -110,6 +110,17 @@ html{
     width: 100%;
     text-align: start;
 }
+.main__p{
+    width: 100%;
+    text-align: start;
+    font-size: 0.9em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    display: none;
+}
+.main__p.show{
+    display: flex;
+}
 .galeria{
     width: 90%;
     height: auto;
@@ -209,7 +220,7 @@ html{
     height: 50px;
     width: 100%;
     padding: 0 10px;
-    margin: 2vh 0;
+    margin-top: 2vh;
 
 }
 .filter-icon{

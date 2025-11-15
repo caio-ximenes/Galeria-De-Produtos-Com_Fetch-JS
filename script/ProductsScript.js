@@ -6,7 +6,7 @@ const menuBar = document.getElementsByClassName('menu-navbar')[0];
 const overlay = document.getElementsByClassName('overlay')[0];
 const html = document.documentElement;
 const filterButton = document.getElementById('filter-button');
-
+const mensagem = document.getElementsByClassName('main__p')[0];
 
 let categorias = ['beauty', 'fragrances', 'furniture', 'groceries'];
 
@@ -137,6 +137,7 @@ criarBotoes(categorias,'main__button');
 
 // Dá funcionalidade ao botão de mostrar filtros
 filterButton.onclick = () => {
+    mensagem.classList.toggle('show');
     const filters = document.querySelectorAll('.main__button');
     filters.forEach(botao => {
         botao.classList.toggle('show');
