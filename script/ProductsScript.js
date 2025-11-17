@@ -18,6 +18,7 @@ function criarCard(produto){
     // Cria a div do card
     let divCard = document.createElement('div');
     divCard.classList.add('card');
+    divCard.classList.add('produtos');
     
     // Cria o texto do id do produto
     let id = document.createElement('h1');

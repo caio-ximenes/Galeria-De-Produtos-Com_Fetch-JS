@@ -131,7 +131,7 @@ html{
     align-items: center;
 }
 .card{
-    height: 500px;
+    
     width: 90%;
     display: flex;
     align-items: center;
@@ -141,12 +141,18 @@ html{
     border-radius: 5%;
     
 }
+.index{
+    height: 550px;
+    width: 98%;
+}
+.produtos{
+    height: 550px;
+    width: 98%;
+}
 .card-img{
     height: 50%;
     width: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
 }
 .card-nome{
@@ -259,12 +265,17 @@ html{
 }
 
 @media(min-width: 600px){
-    .card{
-        padding: 3% 0px;
+    
+    .index{
+    padding: 3% 0px;
         width:540px;
         height: 700px;
-        
     }
+.produtos{
+    padding: 3% 0px;
+        width:540px;
+        height: 700px;
+}
     .card-img{
         height: 70%;
         width: auto;
@@ -292,6 +303,18 @@ html{
         height: 500px;
         padding: 30px 0px;
     }
+     .index{
+    min-width: 40%;
+        width: 0px;
+        height: 700px;
+        padding: 30px 0px;
+    }
+.produtos{
+    min-width: 25%;
+        width: 0px;
+        height: 500px;
+        padding: 30px 0px;
+}
     .header{
         justify-content: space-around;
         
@@ -314,6 +337,9 @@ html{
     }
     .overlay{
         display: none;
+    }
+    #galeria{
+        width:100%;
     }
 }
 @media(min-width: 2000px){
